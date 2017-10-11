@@ -30,8 +30,8 @@ function createGridData(gridDim, canvas) {
     var numHorizontalBox = gridDim[1];
     var w = canvas.width;
     var h = canvas.height;
-    var wDivider = seq_l(0, w, numHorizontalBox + 1);
-    var hDivider = seq_l(0, h, numVerticalBox + 1);
+    var wDivider = seq(0, w, null, numHorizontalBox + 1);
+    var hDivider = seq(0, h, null, numVerticalBox + 1);
     
     var gridData = [];
     for (var i = 0; i < wDivider.length - 1; i++) {
